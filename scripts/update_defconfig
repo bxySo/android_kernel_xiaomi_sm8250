@@ -93,6 +93,7 @@ if [ -n  "$*" ]; then
     -O "${OUT_DIR}" \
     ${KERNEL_CFG}/../${SOC}-perf_defconfig \
     ${KERNEL_CFG}/sm8250-common.config \
+    ${KERNEL_CFG}/../debugfs.config \
   ${KERNEL_CFG}/"${DEVICE}".config);
 
   case "$ret" in
@@ -186,6 +187,7 @@ EOM
         -O "${OUT_DIR}" \
         ${KERNEL_CFG}/../${SOC}-perf_defconfig \
         ${KERNEL_CFG}/sm8250-common.config \
+        ${KERNEL_CFG}/../debugfs.config \
       ${KERNEL_CFG}/"${DEVICE}".config);
 
       case "$ret" in
